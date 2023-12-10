@@ -1,0 +1,70 @@
+CREATE TABLE account (
+  id           int IDENTITY NOT NULL, 
+  username     nvarchar(50) NOT NULL, 
+  password     nvarchar(50) NOT NULL, 
+  first_name   nvarchar(50) NULL, 
+  last_name    nvarchar(50) NULL, 
+  email        nvarchar(50) NULL, 
+  phone_number nvarchar(20) NULL, 
+  role_id      int NULL, 
+  PRIMARY KEY (id));
+CREATE TABLE film (
+  id           int IDENTITY NOT NULL, 
+  title        nvarchar(100) NULL, 
+  category     nvarchar(50) NULL, 
+  length       int NULL, 
+  release_year int NULL, 
+  description  text NULL, 
+  age_limit    int NULL, 
+  director     nvarchar(100) NULL, 
+  actor        nvarchar(50) NULL, 
+  warning_text text NULL, 
+  publish_time datetime NULL, 
+  origin       nvarchar(50) NULL, 
+  img          nvarchar(255) NULL,
+  img_background nvarchar(255) NULL, 
+  status       int NULL, 
+  PRIMARY KEY (id));
+CREATE TABLE room (
+  id       int IDENTITY NOT NULL, 
+  name     varchar(50) NULL, 
+  capacity int NULL, 
+  PRIMARY KEY (id));
+CREATE TABLE news (
+  id          int IDENTITY NOT NULL, 
+  img         nvarchar(255) NULL, 
+  [date]      date NULL, 
+  description text NULL, 
+  PRIMARY KEY (id));
+CREATE TABLE event (
+  id        int IDENTITY NOT NULL, 
+  startHour nvarchar(15) NULL, 
+  [date]    date NULL, 
+  PRIMARY KEY (id));
+CREATE TABLE ticket_film (
+  id      int IDENTITY NOT NULL, 
+  filmid  int NOT NULL, 
+  roomid  int NOT NULL, 
+  eventid int NOT NULL, 
+  PRIMARY KEY (id));
+CREATE TABLE seat (
+  id          int IDENTITY NOT NULL, 
+  seat_number nvarchar(20) NOT NULL, 
+  type        nvarchar(50) NULL, 
+  price       int NULL, 
+  status      int NULL, 
+  roomid      int NOT NULL, 
+  PRIMARY KEY (id));
+CREATE TABLE ticket (
+  id            int IDENTITY NOT NULL, 
+  accountid     int NOT NULL, 
+  seatid        int NOT NULL, 
+  ticket_filmid int NOT NULL, 
+  PRIMARY KEY (id));
+ALTER TABLE ticket ADD CONSTRAINT FKticket662524 FOREIGN KEY (accountid) REFERENCES account (id);
+ALTER TABLE seat ADD CONSTRAINT FKseat283365 FOREIGN KEY (roomid) REFERENCES room (id);
+ALTER TABLE ticket_film ADD CONSTRAINT FKticket_fil165113 FOREIGN KEY (filmid) REFERENCES film (id);
+ALTER TABLE ticket ADD CONSTRAINT FKticket767716 FOREIGN KEY (seatid) REFERENCES seat (id);
+ALTER TABLE ticket_film ADD CONSTRAINT FKticket_fil621101 FOREIGN KEY (roomid) REFERENCES room (id);
+ALTER TABLE ticket_film ADD CONSTRAINT FKticket_fil419413 FOREIGN KEY (eventid) REFERENCES event (id);
+ALTER TABLE ticket ADD CONSTRAINT FKticket397351 FOREIGN KEY (ticket_filmid) REFERENCES ticket_film (id);

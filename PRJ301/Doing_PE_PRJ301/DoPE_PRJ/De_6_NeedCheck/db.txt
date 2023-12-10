@@ -1,0 +1,29 @@
+﻿USE [ContactDB]
+GO
+/****** Object:  Table [dbo].[Contact]    Script Date: 8/23/2017 10:52:44 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Contact](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[FirstName] [nvarchar](50) NULL,
+	[LastName] [nvarchar](50) NULL,
+	[CreatedDate] [date] NULL,
+	[PhoneNumber] [nvarchar](20) NULL,
+	[GroupID] [int] NULL
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[FriendGroup]    Script Date: 8/23/2017 10:52:45 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[FriendGroup](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](50) NULL,
+	[Description] [nvarchar](250) NULL
+) ON [PRIMARY]
+
+GO

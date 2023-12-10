@@ -1,0 +1,65 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans",Sans-Serif;
+}
+body{
+    background-color: #161412;
+}
+nav{
+    background: #161512 linear-gradient(to bottom, hsl(37, 12%, 16%), hsl(37, 10%, 8%)) no-repeat;   
+}
+/*chuyen phan tu nam ngang*/
+nav ul{
+    display: flex;
+    padding: 0px 10px;
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+nav li {
+    position: relative;
+}
+/*con truc tiep cua the nac*/
+nav > ul li{
+    list-style: none; 
+    line-height: 50px;
+    color: #ccc;
+    font-size: 100%;
+    padding: 0px 40px;
+}
+/*hover tat ca*/
+nav ul li:hover{  
+    background-color: #3e6789;
+    box-shadow: 3px 5px 10px rgb(138, 167, 207);
+    color: #fff;
+    cursor: pointer;
+    
+}
+/*cac the li an boi display none*/
+nav li ul {
+    display: none;
+    min-width: 200px;
+    position: absolute;
+    left: -10px;
+
+}
+nav li>ul li{
+    background: #3c3934;
+}
+nav  li:hover > ul{
+    display:  block;
+}
+nav > ul li > ul li > ul{
+    margin-top: -50px ;
+    margin-left: 100%;
+}

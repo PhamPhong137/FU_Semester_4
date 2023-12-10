@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img{
+            background-image: url('https://img.meta.com.vn/Data/image/2021/10/01/background-trang-den-11.jpg');
+            height: 500px;
+            width: 100%;
+            position: relative;
+            opacity: 0.8;
+        }
+        .movie-card {
+            display: flex;
+       position: absolute;
+            /* position: relative; */
+            padding: 30px;
+            color: white;
+            height: 1000px;
+            top: 0;
+        }
+
+
+
+        .movie-image {
+            width: 40%;
+            text-align: end;
+        }
+
+        .movie-image img {
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .movie-info {
+            margin-left: 10px;
+            width: 60%;
+        }
+
+        .movie-title {
+            display: flex;
+            gap: 10px;
+        }
+
+        .movie-format {
+            border: 1px solid white;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .movie-details {
+            display: flex;
+            gap: 10px;
+        }
+
+        .movie-warning {
+            color: red;
+        }
+
+        .details-button,
+        .trailer-button {
+            border: 1px solid yellow;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img"></div>
+    <div class="movie-card">
+        <div class="movie-image">
+            <img src="https://api.chieuphimquocgia.com.vn/Content/Images/0017064_0.jpg" width="300px"
+                alt="ĐẤT RỪNG PHƯƠNG NAM-K">
+        </div>
+        <div class="movie-info">
+            <div style="width: 60%;">
+                <div class="movie-title">
+                    <h3>ĐẤT RỪNG PHƯƠNG NAM-K</h3>
+                    <div class="movie-format">2D</div>
+                </div>
+                <div class="movie-details">
+                    <p>Tâm lý, tình cảm</p>
+                    <p>Viet Nam</p>
+                    <p>105 phút</p>
+                    <p>Đạo diễn: Nguyễn Quang Dũng</p>
+                </div>
+                <div class="movie-cast">
+                    <p>Diễn viên: Hồng Ánh, Huỳnh Hạo Khang, Mai Tài Phến, Công Ninh, Hứa Vĩ Văn, Tuyền Mập, Tuấn Trần.
+                    </p>
+                </div>
+                <div class="movie-release">
+                    <p>Khởi chiếu: 20/10/2023</p>
+                </div>
+                <div class="movie-description">
+                    <p>Sau bao ngày chờ đợi, dự án điện ảnh gợi ký ức tuổi thơ của nhiều thế hệ người Việt chính thức
+                        tung
+                        hình ảnh đầu tiên đầy cảm xúc...</p>
+                </div>
+                <div class="movie-warning">
+                    <p>Khuyến cáo: K - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM DƯỚI 13 TUỔI VÀ CÓ NGƯỜI BẢO HỘ ĐI KÈM</p>
+                </div>
+                <div class="movie-actions">
+                    <button class="details-button">Chi tiết nội dung</button>
+                    <button class="trailer-button">Xem trailer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

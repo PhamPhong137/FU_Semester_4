@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="toan" method="post">
+            Nhap so thu 1: <input type="text" name="num1" /> <br/>
+            Nhap so thu 2: <input type="text" name="num2" /> <br/>
+            <!--            <input type="radio" name="op" value="+"/>cong
+                        <input type="radio" name="op" value="-"/>tru
+                        <input type="radio" name="op" value="*"/>nhan
+                        <input type="radio" name="op" value="/"/>chia-->
+
+            <select name="op">
+                <option value="" selected disabled>Select the option</option>
+                <option value="+">Cong</option>
+                <option value="-">Tru</option>
+                <option value="*">Nhan</option>
+                <option value="/">Chia</option>
+
+            </select>
+            <br/>
+            <input type="submit" value="Tinh toan"/>
+        </form>
+    </body>
+</html>

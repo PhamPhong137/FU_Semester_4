@@ -1,0 +1,24 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Sep 9, 2023, 2:07:47 PM
+    Author     : PC-Phong
+*/
+
+table, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td{
+    height: 40px;
+    width:40px;
+    text-align: center;
+}
+.blue{
+    background-color: blue;   
+}
+.red{
+    background-color: red;
+}

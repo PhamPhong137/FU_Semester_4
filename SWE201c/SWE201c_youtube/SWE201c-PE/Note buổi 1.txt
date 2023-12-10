@@ -1,0 +1,55 @@
+Nếu cái mô hình mà các bạn chọn: 
+1. I suggest choosing Agile methodology, because:
+- REQUIREMENTS CHARATERISTICS:
+	+ 
+	+ 
+- DEVELOPMENT TEAM:
+	+ Quy mô
+	+ mức độ hiểu biết (kinh nghiệm)
+- USER INVOLVEMENT IN THE PROJECT:
+	+
+=> Conclusion: 
+
+REQUIREMENTS CHARATERISTICS (đặc điểm yêu cầu):
+	+ Độ chính xác và rõ ràng của yêu cầu
+	+ Có các loại yêu cầu nào: FUNCTIONAL, NON-FUNCTIONAL... (chia theo role người dùng)
+	+ Độ tin cậy của các loại yêu cầu này
+	+ Các yêu cầu này đã rõ ràng chưa, có dễ bị thay đổi không...
+	+ Các yêu cầu có thể được xác định từ ban đầu hay không
+DEVELOPMENT TEAM (đội ngũ phát triển):
+	+ Quy mô của nhóm phát triển: số lượng, vai trò...
+	+ Mức độ hiểu biết của nhóm phát triển, kinh nghiệm của nhóm...
+USER INVOLVEMENT IN THE PROJECT (sự tham gia của người dùng vào dự án) 
+	+ Xác định xem người dùng có tham gia vào dự án hay không
+	+ Đánh giá kich thước của dự án: nhỏ, trung bình, lớn... 
+	( nếu số lượng nhóm phát triển tương đương với số lượng yêu cầu 	-> trung bình,	5ng  - 5cv  => 1ng = 1cv
+	  nếu số lượng nhóm phát triển nhiều hơn số lượng yêu cầu 		-> nhỏ, 	10ng - 2cv  => 1ng = 0.2cv
+	  nếu số lượng nhóm phát triển ít hơn số lượng yêu cầu 			-> lớn ) 	5ng  - 20cv => 1ng = 4cv
+-> Chốt lại vấn đề, đưa ra đề xuất mô hình phù hợp với tình huống hiện tại...
+
+
+Chỉ chọn WATERFALL khi:
++ Yêu cầu bắt buộc phải rõ ràng rồi, ít thay đổi thôi
++ Có đội support để cùng làm rõ yêu cầu
++ Team phải là một team phát triển chuyên nghiệp, có kinh nghiệm
++ Quy mô dự án: nhỏ, trung bình
+
+Còn lại: Chọn AGILE
+
+2. 
+- 4 functional requirements for employee:
++
++ 
++ 
++
+
+- 2 non-functional requirements of system:
++
++
+
+3.
+2 user stories of employee role:
++ As a [role], I want to [action], so that [purpose]
+Ex: 
+	+ As a employee, I want to view my schedule of working, so that I can calculate my salary.
+	+ As a employee, I want to view my shift by month, by week, by day, so that I can adjust your work accordingly

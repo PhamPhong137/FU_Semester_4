@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Detail Page</title>
+    <style>
+        .info {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .left {
+            flex: 0 0 70%;
+            /* 70% width of the .info container */
+            margin-right: 2%;
+            /* Optional spacing between left and right */
+        }
+
+        .right {
+            flex: 0 0 30%;
+            /* 30% width of the .info container */
+        }
+
+        /* Styling for order status, details, and other content */
+        .order-status,
+        .order-details {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .status-header {
+            color: #d9534f;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .status-detail,
+        .cancel-reason,
+        .label,
+        .value {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .value {
+            margin-bottom: 10px;
+        }
+
+        .shipping-detail,
+        .product-image-description {
+
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Styling for the right section for notes and order history */
+        .right>div {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .right>div:first-child {
+            font-weight: bold;
+            color: #5cb85c;
+        }
+
+        .right>div:nth-child(2) {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .right>div:not(:first-child) {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .transaction-status {
+            background-color: #f7f7f7;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .transaction-detail {
+            background-color: #fff;
+            
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+        }
+
+        .transaction-message {
+            color: #4CAF50;
+            /* Green color to indicate success */
+            font-weight: bold;
+        }
+
+        .transaction-time {
+            color: #333;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info">
+        <div class="left">
+            <div class="order-status">
+                <div class="status-header">Đã hủy</div>
+                <div class="status-detail">đã hủy tự động vởi shoppie</div>
+                <div class="cancel-reason">Lý do hủy: Giao hàng thất bại</div>
+            </div>
+
+            <div class="order-details">
+                <div class="order-number-section">
+                    <div class="label">Mã đơn hàng</div>
+                    <div class="value">MJFHFFHFHFHFHFHFH</div>
+                </div>
+                <div class="address-section">
+                    <div class="label">Địa chỉ nhận hàng</div>
+                    <div class="value">DDDDDDDadf ặ a fwa ưa ư</div>
+                </div>
+                <div class="shipping-info-section">
+                    <div class="label">Thông tin vận chuyển</div>
+                    <div class="shipping-detail">Kiện hàng 1: Nhanh .......</div>
+                    <div class="product-image-description">Hình ảnhhhhhhhh Total 2 products</div>
+                    <div class="transaction-status">
+                        <div class="transaction-detail">
+                            <div class="transaction-message">Đơn hàng hoàn trả thành công</div>
+                            <div class="transaction-time">10:20 20/03/2023</div>
+                        </div>
+                        <div class="transaction-detail">
+                            <div class="transaction-message">Đơn hàng hoàn trả thành công</div>
+                            <div class="transaction-time">10:20 20/03/2023</div>
+                        </div>
+                        <div class="transaction-detail">
+                            <div class="transaction-message">Đơn hàng hoàn trả thành công</div>
+                            <div class="transaction-time">10:20 20/03/2023</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div>Thêm 1 ghi chú</div>
+            <div>Lịch sử đơn hàng </div>
+            <div>
+                <div>Đơn hàng đã hủy</div>
+                <div>20/19/2003</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

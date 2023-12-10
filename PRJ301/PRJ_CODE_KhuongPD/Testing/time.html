@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tablist Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .date,
+        .time {
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hello,
+        .hello1 {
+            margin: 0px 20px;
+        }
+
+        .hello1 {
+            margin: 0px 20px;
+            border: 2px solid blue;
+            border-radius: 10px;
+            padding: 5px 25px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="date">
+        <div class="hello" id="showTime">
+            <p>Th. 10 22 Chủ nhật</p>
+        </div>
+        <div>
+            <p>Th. 10 23 Thứ hai</p>
+        </div>
+    </div>
+
+    <div class="time">
+        <div class="hello1">
+            <span>22:00</span>
+        </div>
+        <div class="hidden" id="hiddenTime">
+            <span>13:00</span>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const showTimeElement = document.getElementById("showTime");
+            const hiddenTimeElement = document.getElementById("hiddenTime");
+
+            showTimeElement.addEventListener("click", function () {
+                hiddenTimeElement.classList.toggle("hidden");
+            });
+        });
+
+    </script>
+</body>
+
+</html>

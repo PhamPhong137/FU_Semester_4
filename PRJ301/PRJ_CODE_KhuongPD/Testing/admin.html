@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Admin</title>
+    <style>
+        /* CSS cho toàn bộ trang */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex; /* Cho phép sắp xếp nội dung theo hàng ngang */
+            height: 2000px;
+        }
+
+        /* CSS cho thanh sidebar bên trái */
+        .sidebar {
+            width: 20%;
+            height: 100vh;
+            background-color: #333;
+            color: #fff;
+            position: fixed; /* Cố định thanh sidebar */
+            top: 0;
+            left: 0;
+            overflow-y: auto; /* Cho phép cuộn nếu nội dung vượt quá kích thước */
+        }
+
+        /* CSS cho phần nội dung danh sách phim */
+        .content {
+            margin-left: 20%; /* Để danh sách phim không bị che bởi thanh sidebar */
+            padding: 20px;
+            width: 80%; /* Đảm bảo phần nội dung lấp đầy phần còn lại */
+        }
+
+        /* CSS cho bảng hiển thị danh sách phim */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* CSS cho nút thêm phim */
+        .add-button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Thanh sidebar bên trái -->
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Quản lí phim</a></li>
+            <li><a href="#">Thống kê</a></li>
+            <!-- Thêm các liên kết khác tại đây -->
+        </ul>
+    </div>
+
+    <!-- Phần nội dung danh sách phim -->
+    <div class="content">
+        <h1>Danh sách phim</h1>
+        <button class="add-button">Thêm phim</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tên phim</th>
+                    <th>Đạo diễn</th>
+                    <th>Năm sản xuất</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Avengers: Endgame</td>
+                    <td>Russo Brothers</td>
+                    <td>2019</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Black Panther</td>
+                    <td>Ryan Coogler</td>
+                    <td>2018</td>
+                </tr>
+                <!-- Thêm dữ liệu danh sách phim tại đây -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
